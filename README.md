@@ -20,7 +20,7 @@ Install Ruby on ahead, then execute:
 
     $ briefing slides.md
 
-Open http://localhost:4567/ in a web browser.
+Open [http://localhost:4567/](http://localhost:4567/) in a web browser.
 
 ## Syntax
 
