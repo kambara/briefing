@@ -31,6 +31,9 @@ module Briefing
           buffer << line
         end
       }
+      if buffer.length > 0
+        @sections << buffer.join("")
+      end
       @options = DEFAULTS.merge(YAML.load(@sections.shift))
     end
   end

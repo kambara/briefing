@@ -12,7 +12,7 @@ you can show it as a beautiful slides in your web browser.
 
 ## Installation
 
-Install Ruby on ahead, then execute:
+Install Ruby and RubyGems on ahead, then execute:
 
     $ sudo gem install briefing
 
@@ -20,7 +20,7 @@ Install Ruby on ahead, then execute:
 
     $ briefing slides.md
 
-Open [http://localhost:4567/](http://localhost:4567/) in a web browser.
+Open [http://localhost:4567/](http://localhost:4567/) in your web browser.
 
 ## Syntax
 
