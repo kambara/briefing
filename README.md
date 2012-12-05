@@ -79,7 +79,7 @@ Open http://localhost:4567/ in a web browser.
 
 ## Manually Build and Install (For Developers)
 
-    $ git clone ~~~
+    $ git clone git@github.com:kambara/briefing.git
     $ cd briefing
 
 If you use RVM, create .rvmrc:
