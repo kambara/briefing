@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), '../lib')
+require 'briefing'
+
+options = {}
+opt_parser = OptionParser.new do |opts|
+  opts.banner = "Usage: briefing [options] slides.md"
+
+  opts.on('-p PORT', '--port=PORT') do |v|
+    options[:port] = v
+  end
+end
+
+argv = opt_parser.parse(ARGV)
+if argv.length == 0
+  puts opt_parser.help
+  exit 1
+end
+unless File.exist?(argv[0])
+  puts "The file '#{argv[0]}' does not exist."
+  exit 1
+end
+
+Briefing::App.run!(
+  :slides_source => argv.shift
+)
