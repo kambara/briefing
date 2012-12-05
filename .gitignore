@@ -1,4 +1,4 @@
 .rvmrc
 Gemfile.lock
-vendor/reveal.js
+vendor/*
 pkg/
