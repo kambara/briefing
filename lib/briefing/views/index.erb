@@ -57,8 +57,8 @@
 
     <script>
       Reveal.initialize({
-        <% Briefing::Slides::DEFAULTS.each_key {|key| %>
-          <%= key.to_s %>: <%= @options[key] %>,
+        <% @options.revealjs.each_pair {|key, value| %>
+          <%= key.to_s %>: <%= value.to_s %>,
         <% } %>
         theme: '<%= @options['theme'] || 'default' %>', // available themes are in /css/theme
         transition: '<%= @options['transition'] || 'default' %>', // default/cube/page/concave/zoom/linear/none
